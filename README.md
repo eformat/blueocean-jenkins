@@ -1,10 +1,9 @@
-/home/mike/git/jenkins2
-
+-- install jenkins using template (need to custom build)
 oc new-project ci2
 oc new-app ./jenkins-persistent-template.yaml
 oc deploy jenkins --latest
 
-
+-- dependencies if you need to install manually through configure jenkins
 blueocean-dashboard
 sse-gateway
 
